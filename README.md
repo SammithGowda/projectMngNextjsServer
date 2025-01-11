@@ -1,0 +1,2 @@
+# projectMngNextjsServer
+Node.js server
