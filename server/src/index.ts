@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.use('/projects',projectRoutes)
-app.use('/task',taskRoutes)
+app.use('/tasks',taskRoutes)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

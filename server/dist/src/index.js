@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
     res.send("hello this is home route !");
 });
 app.use('/projects', projectRoutes_1.default);
-app.use('/task', taskRoutes_1.default);
+app.use('/tasks', taskRoutes_1.default);
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
