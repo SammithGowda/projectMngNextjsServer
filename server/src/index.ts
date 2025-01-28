@@ -9,6 +9,7 @@ import bodyParser from "body-parser";
 import projectRoutes from "./routes/projectRoutes"
 import taskRoutes from "./routes/taskRoutes"
 import searchRoutes from "./routes/searchRoutes";
+import getUsers  from "./routes/userRoutes";
 
 dotenv.config();
 const app = express();
@@ -27,6 +28,7 @@ app.get("/", (req, res) => {
 app.use('/projects',projectRoutes)
 app.use('/tasks',taskRoutes)
 app.use('/search',searchRoutes)
+app.use('/users',getUsers)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

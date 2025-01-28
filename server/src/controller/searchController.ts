@@ -37,6 +37,6 @@ export const search = async (req: Request, res: Response): Promise<void> => {
   } catch (error: any) {
     res
       .status(500)
-      .json({ message: `Error retrieving task: ${error.message}` });
+      .json({ message: `Error in search : ${error.message}` });
   }
 };
